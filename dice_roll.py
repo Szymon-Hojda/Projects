@@ -1,85 +1,51 @@
 import random
 
-#print(random_throw)
-print('This is a dice stimulator\n')
-
-def rzut_kostki():
+def dice_roll():
     random_throw = random.randint(1,6)
-    ###############1###############
+
     if random_throw == 1:
-        for i in range(5):
-            if i == 0:
-                print('.-----------.')
-            elif i == 4:
-                print('`-----------`')
-            elif i == 2:
-                print('|     ' + '0' +'     |')
-
-            else:
-                print('|           |')
-    ###############2###############
+        print('.-----------.')
+        print('|           |')
+        print('|     0     |')
+        print('|           |')
+        print('`-----------`')
     if random_throw == 2:
-        for i in range(5):
-            if i == 0:
-                print('.-----------.')
-            elif i == 4:
-                print('`-----------`')
-            elif i == 2:
-                print('|   0   0   |')
-
-            else:
-                print('|           |')
-    ###############3###############
+        print('.-----------.')
+        print('|           |')
+        print('|   0   0   |')
+        print('|           |')
+        print('`-----------`')
     if random_throw == 3:
-        for i in range(5):
-            if i == 0:
-                print('.-----------.')
-            elif i == 4:
-                print('`-----------`')
-            elif i == 2:
-                print('|     ' + '0' +'     |')
-
-            else:
-                print('|     0     |')
-    ###############4###############
+        print('.-----------.')
+        print('|     0     |')
+        print('|     0     |')
+        print('|     0     |')
+        print('`-----------`')
     if random_throw == 4:
-        for i in range(5):
-            if i == 0:
-                print('.-----------.')
-            elif i == 4:
-                print('`-----------`')
-            elif i == 2:
-                print('|     ' + '' +'      |')
-            elif i == 1 or i == 3:
-                print('|  0     0  |')
-    ###############5###############
+        print('.-----------.')
+        print('|   0   0   |')
+        print('|           |')
+        print('|   0   0   |')
+        print('`-----------`')
     if random_throw == 5:
-        for i in range(5):
-            if i == 0:
-                print('.-----------.')
-            elif i == 4:
-                print('`-----------`')
-            elif i == 2:
-                print('|     ' + '0' +'     |')
-
-
-            elif i == 1 or i == 3:
-
-                print('|  0     0  |')
-    ###############6###############
+        print('.-----------.')
+        print('|   0   0   |')
+        print('|     0     |')
+        print('|   0   0   |')
+        print('`-----------`')
     if random_throw == 6:
-        for i in range(5):
-            if i == 0:
-                print('.-----------.')
-            elif i == 4:
-                print('`-----------`')
-            elif i == 2:
-                print('|     ' + '' +'      |')
+        print('.-----------.')
+        print('|   0   0   |')
+        print('|   0   0   |')
+        print('|   0   0   |')
+        print('`-----------`')
 
-            else:
-                print('|  0  0  0  |')
-rzut_kostki()
+print('---This is simulator of Dice roll---')
+dice_roll()
+
 while True:
-    UserInput = input("Press y to roll again.")
+    UserInput = input("Press y to roll again : \n")
     if UserInput == 'y':
-        rzut_kostki()
+        dice_roll()y
+    else:
+        break
