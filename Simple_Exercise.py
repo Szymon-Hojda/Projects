@@ -63,3 +63,9 @@ space()
 #5. Create a function which is find a prime number and give new list with that numbers.
 a_list = [1,2,3,4,56,73,111,'s','whatever',23.22]
 def isPrime(list):
+    for x in list:
+        for z in range(1,x):
+            if x % z == 0:
+                print('its prime')
+
+isPrime(a_list)
