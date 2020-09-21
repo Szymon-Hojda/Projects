@@ -46,6 +46,6 @@ dice_roll()
 while True:
     UserInput = input("Press y to roll again : \n")
     if UserInput == 'y':
-        dice_roll()y
+        dice_roll()
     else:
         break
